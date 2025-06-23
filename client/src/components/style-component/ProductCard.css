@@ -1,0 +1,30 @@
+.product-card {
+    text-align: center;
+    background-color: lab(98.91% 1.33 0.46);
+    height: auto;
+    padding: 10px;
+    border-radius: .5rem;
+}
+.product-card h3{
+    font-size: 1.5rem;
+}
+.product-card img{
+ width: 250px;
+ height: 300px;
+}
+.product-card p{
+    padding: 2px;
+}
+.product-card button{
+    width: 80%;
+    height: 35px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.product-card button:hover{
+    background: black;
+    color: white;
+    transition: .3s;
+}

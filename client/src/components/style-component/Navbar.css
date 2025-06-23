@@ -1,0 +1,202 @@
+header{
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    width: 100%;    
+    height: 95px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+header .logo{
+    width: auto;
+    height: auto;
+}
+header .logo a img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+}
+
+header nav{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+}
+
+header .auth-links{
+    width: auto;
+    display: flex;
+}
+header .auth-links .Links{
+    padding: 10px;
+}
+
+header .auth-links .Links:hover{
+    color: #4CAF50;
+}
+
+
+header .menu-icon{
+    display: none;
+}
+
+
+
+/* Menú desplegable de categorías */
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown-title {
+  cursor: pointer;
+  padding: 0 10px;
+  transition: .3s;
+}
+
+.dropdown-title:hover{
+  color: #4CAF50;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 150px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 100;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.2s;
+  color: black;
+}
+
+.dropdown-item:hover {
+  background: #f0e0c0;
+}
+
+
+/* datos usuario */
+.user-dropdown {
+  position: relative;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  border: 1px solid #e2e1e1;
+  border-radius: 10px;
+}
+
+.profile-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  min-width: 180px;
+  padding: 15px;
+  z-index: 200;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.profile-menu p {
+  margin: 0 0 8px 0;
+  color: #333;
+}
+.profile-menu button {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  background: #3d8f40;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.profile-menu button:hover {
+  background: #1d421e;
+}
+.profile-menu .color{
+  background-color: rgb(129, 2, 2);
+}
+.profile-menu .color:hover{
+  background-color: rgb(202, 6, 6);
+}
+
+
+/* hover de nacegacion */
+.navegacion{
+  color: white;
+  transition: .3s;
+}
+.navegacion:hover{
+  color: #4CAF50;
+}
+
+/* Reponsive */
+@media (max-width: 1200px) {
+    header .logo a img{
+        height: 120px;
+        width: 120px;
+    }
+    header nav{
+        font-size: 15px;
+        width: 27%;
+    }
+    header .auth-links .Links{
+        padding: 10px;
+    }
+}
+@media (max-width: 930px) {
+    header{
+        justify-content: space-between;
+    }
+    header nav{
+        position: absolute;
+        top: 90px;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: teal;
+        width: 100%;
+        height: auto;
+        padding: 20px 100px;
+        line-height: 50px;
+        font-size: 17px;
+        transition: all .3s;
+
+    }
+    header .menu-icon{
+        display: block;
+        width: 15%;
+        text-align: center;
+    }
+    header nav.event-menu{
+        left: 0;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        background: #fff;
+        font-size: 17px;
+    }
+    
+    .dropdown-item {
+        padding: 0;
+    }
+}
