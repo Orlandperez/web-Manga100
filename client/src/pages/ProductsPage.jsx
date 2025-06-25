@@ -8,7 +8,11 @@ import "./style-pages/ProductsPage.css";
 export default function ProductsPage() {
   const [products, setProducts] = useState([]);
   const location = useLocation();
+  const [search, setSearch] = useState("");
 
+const filteredProducts = products.filter(prod =>
+    prod.name.toLowerCase().includes(search.toLowerCase())
+  );
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const category = params.get("category");
@@ -22,9 +26,16 @@ export default function ProductsPage() {
       <div className="products-container">
         <h1>Productos</h1>
         <p>Encuentra los mejores productos aquí</p>
+        <input
+          type="text"
+          placeholder="Buscar producto..."
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+        />
+        
       </div>
       <div className="products-list">
-        {products.map(prod => (
+        {filteredProducts.map(prod => (
           <ProductCard key={prod._id} product={prod} />
         ))}
       </div>

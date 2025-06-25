@@ -14,13 +14,13 @@ const slides = [
         img: dragonBall,
         title: "Tu tienda preferida",
         desc: "Siempre cerca",
-        button: { text: "Encontranos", link: "#" },
+        button: { text: "Encontranos", link: "/about" },
     },
     {
         img: quintiDiosas,
         title: "Desde 2010",
         desc: "Brindando los mejores mangas",
-        button: { text: "Conocenos", link: "" },
+        button: { text: "Conocenos", link: "/products" },
     },
     {
         img: one,

@@ -1,0 +1,93 @@
+.cartPage{
+  width: 100%;
+  height: auto ;
+}
+.cartPage h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
+}
+.cartPage .cartPage-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+} 
+
+.cartPage .cartPage-container .cartPage-all{
+  width: 40%;
+  padding: 20px 0;
+}
+
+.cartPage .cartPage-container .cart-item{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 30px;
+  margin: 10px 0;
+}
+.cartPage .cartPage-container .cart-item .cart-item-details{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+.cartPage .cartPage-container .cart-item .cart-item-details button{
+  background-color: rgb(180, 4, 4);
+  width: 50%;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin: 5px 0;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.cartPage .cartPage-container .cart-item .cart-item-details button:hover {
+  background-color: darkred;
+}
+
+.cartPage .cartPage-container .cart-item img {
+  width: 200px;
+  height: auto;
+}
+
+.cart-total-section{
+    position: sticky;
+    top: 200px;
+    align-self: flex-start;
+    border: 1px solid gray;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+
+}
+
+.cart-total-section .checkout-btn{
+    background-color: gray;
+    width: 50%;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+
+.cart-total-section .checkout-btn:hover{
+    background-color: black;
+    color: white;
+    transition: .3s;
+    
+}

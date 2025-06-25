@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CategorySelect from "../components/CategorySelect";
 import { useNavigate, useParams } from "react-router-dom";
+import './style-pages/ProductFormPage.css' // Asegúrate de tener este archivo CSS
 
 export default function ProductFormPage() {
   const [form, setForm] = useState({ name: "", price: "", description: "", category: "", images: [] });
@@ -67,20 +68,20 @@ export default function ProductFormPage() {
   };
 
   return (
-    <div style={{ display: "flex", gap: "40px", justifyContent: "center" }}>
+    <section className="product-form-page">
       {/* Formulario crear/editar */}
-      <form onSubmit={handleSubmit} encType="multipart/form-data" style={{ minWidth: 300 }}>
+      <form onSubmit={handleSubmit} encType="multipart/form-data" className="product-form">
         <h2>{id ? "Editar producto" : "Crear producto"}</h2>
         <input name="name" placeholder="Nombre" value={form.name} onChange={handleChange} required />
         <input name="price" type="number" placeholder="Precio" value={form.price} onChange={handleChange} required />
-        <input name="description" placeholder="Descripción" value={form.description} onChange={handleChange} />
+        <textarea name="description" placeholder="Descripción" value={form.description} onChange={handleChange} />
         <CategorySelect value={form.category} onChange={cat => setForm({ ...form, category: cat })} />
         <input name="images" type="file" multiple onChange={handleFileChange} />
         <button type="submit">{id ? "Actualizar" : "Guardar"} producto</button>
       </form>
 
       {/* Formulario borrar */}
-      <form onSubmit={handleDelete}>
+      <form onSubmit={handleDelete} className="delete-product-form">
         <h2>Eliminar producto</h2>
         <input
           name="name"
@@ -98,6 +99,6 @@ export default function ProductFormPage() {
         </button>
         {deleteError && <p>{deleteError}</p>}
       </form>
-    </div>
+    </section>
   );
 }

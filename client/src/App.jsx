@@ -11,6 +11,7 @@ import CategoryPage from "./pages/CategoryPage.jsx";
 import CategoryFormPage from "./pages/CategoryFormPage.jsx";
 import Footer from "./components/Footer.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
+import CartPage from "./pages/CartPage.jsx";
 
 import "./App.css"; // Importa tu archivo CSS principal
 
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/categories" element={<CategoryPage />} />
           <Route path="/admin/categories/new" element={<CategoryFormPage />} />
           <Route path="/about" element={<AboutPage/>}/>
+          <Route path="/cart" element={<CartPage />} />
         </Routes>
       </div>
       <Footer/>

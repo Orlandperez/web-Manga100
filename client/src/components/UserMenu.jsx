@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext.jsx";
+import { useCart } from "../context/CartContext";
 import axios from "axios";
 
 export default function UserMenu() {
   const { user, logout, setUser } = useAuth();
+  const { cart } = useCart();
   const [profileOpen, setProfileOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -67,7 +69,7 @@ export default function UserMenu() {
       )}
       <Link to="/cart" className="Links">
         <i className="bi bi-cart"></i>
-        <span className="cart-count">0</span>
+        <span className="cart-count">{cart.length}</span>
       </Link>
     </div>
   );

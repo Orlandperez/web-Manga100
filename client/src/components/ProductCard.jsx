@@ -1,7 +1,9 @@
 import React from "react";
 import "./style-component/ProductCard.css"
+import { useCart } from "../context/CartContext";
 
 export default function ProductCard({ product }) {
+const { addToCart } = useCart();
   return (
     <div className="product-card">
       <h3>{product.name}</h3>
@@ -22,7 +24,9 @@ export default function ProductCard({ product }) {
       <p>Precio: ${product.price}</p>
       <p>{product.description}</p>
       <p>Categoría: {product.category?.name}</p>
-      <button>Agregar al carrito</button>
+      <button onClick={() => addToCart(product)}>
+      Agregar al carrito
+      </button>
     </div>
   );
 }

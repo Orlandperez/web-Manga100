@@ -1,0 +1,85 @@
+/* Estilo de la creacion del producto */
+.produc-form-page{
+    width: 100%;
+    height: auto;
+}
+
+.product-form-page .product-form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.product-form-page .product-form h2{
+    text-align: center;
+}
+.product-form-page .product-form input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.product-form-page .product-form button {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.product-form-page .product-form button:hover {
+    background-color: black;
+    color: white;
+    transition: .3s;
+}
+
+
+/* Stilo del eliminar producto */
+
+.product-form-page .delete-product-form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.product-form-page .delete-product-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.delete-product-form h2 {
+    text-align: center;
+}
+
+.delete-product-form button {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+}
+    
+.delete-product-form button:hover {
+    background-color: black;
+    color: white;
+    transition: .3s;
+}

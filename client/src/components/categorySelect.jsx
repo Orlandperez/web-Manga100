@@ -10,8 +10,8 @@ export default function CategorySelect({ value, onChange }) {
   }, []);
 
   return (
-    <select value={value} onChange={e => onChange(e.target.value)}>
-      <option value="">Selecciona una categoría</option>
+    <select  style={{outline: "none"}} value={value} onChange={e => onChange(e.target.value)}>
+      <option  value="" >Selecciona una categoría</option>
       {categories.map(cat => (
         <option key={cat._id} value={cat._id}>{cat.name}</option>
       ))}

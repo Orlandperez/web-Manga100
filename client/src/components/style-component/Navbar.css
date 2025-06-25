@@ -82,11 +82,13 @@ header .menu-icon{
   cursor: pointer;
   white-space: nowrap;
   transition: 0.2s;
-  color: black;
+  color: white;
+  background-color: #333;
 }
 
 .dropdown-item:hover {
-  background: #f0e0c0;
+  color: #4CAF50;
+  
 }
 
 
