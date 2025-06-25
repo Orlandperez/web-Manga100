@@ -6,11 +6,10 @@ function AboutPage() {
         <>
         <section className='aboutPage'>
             <div className='aboutInfo'>
-            <h1>¡Bienvenidos a Manga 100%!</h1>
-            <p>Somos mucho más que una tienda de mangas; somos un espacio creado por y para apasionados del manga como vos. Desde el primer tomo que nos apasionó hasta la última novedad que nos mantiene en vilo, entendemos la emoción de sumergirse en mundos fantásticos y conectar con historias inolvidables.
-               En Manga 100%, nos dedicamos a ofrecerte una cuidadosa selección de los mejores títulos, desde los clásicos atemporales que forjaron la cultura manga hasta las últimas series que están revolucionando la escena. Queremos que cada visita sea una aventura, donde descubras tu próxima obsesión o encuentres ese volumen que tanto buscabas.
-               Nuestro compromiso es brindarte una experiencia de compra excepcional. Nos esforzamos por tener un catálogo siempre actualizado, precios competitivos y, lo más importante, un equipo que comparte tu pasión y está listo para asesorarte. Creemos en la importancia de la comunidad, y es por eso que buscamos ser un punto de encuentro para todos los que amamos el arte y la narrativa del manga.
-               ¡Gracias por elegirnos! Esperamos verte pronto y compartir contigo la magia de cada página.</p>
+            <h1>Somos tu mejor opción</h1>
+            <p>En Librería TAO, fusionamos la eficiencia de tu espacio de trabajo con un profundo respeto por el medio ambiente. Nos especializamos en bolsas ecológicas y artículos de oficina, todos pensados para ser no solo funcionales, sino también un reflejo de tus valores. Creemos firmemente que la productividad y la sostenibilidad pueden ir de la mano, permitiéndote operar de forma consciente sin sacrificar la calidad.
+
+Ofrecemos la posibilidad de personalizar nuestros productos con tu logo, transformando cada artículo en una extensión de tu marca y un compromiso con prácticas responsables. Con Librería TAO, equipás tu oficina y promocionás tu empresa, contribuyendo activamente a un futuro más verde.</p>
             </div>
             <div className='aboutMap'>
               <h1>Encontranos en:</h1>

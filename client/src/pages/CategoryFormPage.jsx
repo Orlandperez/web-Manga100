@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "./style-pages/CategoryFormPage.css"; 
 
 export default function CategoryFormPage() {
   const [name, setName] = useState("");
@@ -42,11 +43,12 @@ export default function CategoryFormPage() {
     }
   } catch (err) {
     setDeleteError("Error al eliminar la categoría.");
+    console.error("Error al eliminar la categoría:", err);
   }
 };
 
   return (
-    <div>
+    <div className="category-form-container">
       {/* Formulario crear categoría */}
       <form onSubmit={handleCreate}>
         <h2>Crear categoría</h2>
@@ -62,14 +64,14 @@ export default function CategoryFormPage() {
       {/* Formulario eliminar categoría */}
       <form onSubmit={handleDelete}>
         <h2>Eliminar categoría</h2>
-        <select
+        <select 
           value={deleteCat}
           onChange={e => setDeleteCat(e.target.value)}
           required
         >
-          <option value="">Selecciona una categoría</option>
+          <option  value="">Selecciona una categoría</option>
           {categories.map(cat => (
-            <option key={cat._id} value={cat._id}>{cat.name}</option>
+            <option  key={cat._id} value={cat._id}>{cat.name}</option>
           ))}
         </select>
         <button type="submit">

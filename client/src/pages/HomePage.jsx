@@ -4,27 +4,27 @@ import { useState } from 'react';
 import './style-pages/HomePage.css';
 import { Link } from 'react-router-dom';
 
-import dragonBall from "../assets/dragonBall.jpg";
-import quintiDiosas from "../assets/quintidiosas.jpg";
-import one from "../assets/one.jpg";
+import libre_1 from "../assets/libre_1.png";
+import libre_2 from "../assets/libre_2.png";
+import libre_3 from "../assets/libre_3.png";
 
 
 const slides = [
     {
-        img: dragonBall,
-        title: "Tu tienda preferida",
+        img: libre_1,
+        title: "Tu mejor opción",
         desc: "Siempre cerca",
         button: { text: "Encontranos", link: "/about" },
     },
     {
-        img: quintiDiosas,
+        img: libre_2,
         title: "Desde 2010",
-        desc: "Brindando los mejores mangas",
+        desc: "Brindando diseños únicos",
         button: { text: "Conocenos", link: "/products" },
     },
     {
-        img: one,
-        title: "Encontrá nuestras novedades",
+        img: libre_3,
+        title: "Encontrá lo que buscás",
         desc: "A los mejores precios del mercado",
         button: { text: "Descubrilos", link: "/products" },
     },

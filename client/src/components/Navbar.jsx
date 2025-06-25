@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './style-component/Navbar.css';
-import Logo from "./logo";
+import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 import UserMenu from "./UserMenu";
 

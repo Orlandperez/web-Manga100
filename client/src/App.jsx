@@ -19,6 +19,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <main>
       <div className="main-content">
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="/cart" element={<CartPage />} />
         </Routes>
       </div>
+      </main>
       <Footer/>
     </BrowserRouter>
   );
